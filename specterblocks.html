@@ -8,7 +8,7 @@ body {
   margin: 0.5% 15% 0% 15%;
   font-family:arial;
   background-color:black;
-} /* Copyright (C) 2016 RogueScalar - ALL RIGHTS RESERVED. */
+}
 #gameClient {
   position:relative;
   margin-left:25%;
@@ -105,7 +105,7 @@ body {
   border-radius:5px;
   background-color:gold;
   visibility: hidden;
-} /* Copyright (C) 2016 RogueScalar - ALL RIGHTS RESERVED. */
+} 
 #specter1 {
   width:25px;
   height:25px;
@@ -209,7 +209,7 @@ body {
   width:35px;
   font-size:20px;
   border-radius:20px;
-} /* Copyright (C) 2016 RogueScalar - ALL RIGHTS RESERVED. */
+} 
 #gameOver {
  font-family:impact;
  letter-spacing:0.1em;
@@ -370,7 +370,7 @@ function playGame() {
 	  sc = sif(spawnCoins, 5000);
 	  cd = sif(countDown, 1000);
 	}
-  } // Copyright (C) 2016 RogueScalar - ALL RIGHTS RESERVED.
+  } 
   function moveSpecters() {
     if (posx > 375 || posy > 375) {
       toggle = true;
@@ -409,7 +409,7 @@ function playGame() {
 	if ((prevx == posx) && (prevy == posy)) {
 		posx++;
 		posy--;
-	} // Copyright (C) 2016 RogueScalar - ALL RIGHTS RESERVED.	
+	} 
 	prevx = posx;
 	prevy = posy;
         s1.style.top = posy + 'px';
@@ -459,7 +459,7 @@ function playGame() {
 	s2.style.top = posy1 + 'px';
     s2.style.left = posx1 + 'px';
 	hitSpecter2();
-  } // Copyright (C) 2016 RogueScalar - ALL RIGHTS RESERVED.
+  } 
   function pulseBarriers() {
 	if (!togglePulse) {
 		togglePulse = true;
@@ -528,7 +528,7 @@ function playGame() {
     if ((((plposx >= b3posx) && (plposx <= (b3posx+23))) && ((plposy >= b3posy) && (plposy <= (b3posy+99)))) || ((((plposx+23) >= b3posx) && ((plposx+23) <= (b3posx+23))) && (((plposy+23) >= b3posy) && ((plposy+23) <= (b3posy+99))))) {
 		gameOver();
 	}
-  } // Copyright (C) 2016 RogueScalar - ALL RIGHTS RESERVED.
+  } 
   function hitSpecter1() {
     if ((((plposx >= posx) && (plposx <= (posx+23))) && ((plposy >= posy) && (plposy <= (posy+23)))) || ((((plposx+23) >= posx) && ((plposx+23) <= (posx+23))) && (((plposy+23) >= posy) && ((plposy+23) <= (posy+23))))) {
 		gameOver();
@@ -581,7 +581,7 @@ function playGame() {
 		d.getElementById("gameOver").innerHTML = "<p>Time Is Up!</p><p>YOU WON !</p><p>You Got "+ coins + " Coin(s) Too!</p><p>Play Again!</p>";
 		d.getElementById("gameOver").style.visibility = "visible";
 	}
-  } // Copyright (C) 2016 RogueScalar - ALL RIGHTS RESERVED.
+  } 
   function moveUp() {
     if (!isGameOver) {
 		plcury-=25;
@@ -646,7 +646,7 @@ function playGame() {
 			moveRight();
 			break;
 	}
-  } // Copyright (C) 2016 RogueScalar - ALL RIGHTS RESERVED.
+  } 
   function gameOver() {
 		if (!volOff) {
 			d.getElementById("music").pause();
@@ -681,7 +681,7 @@ function playGame() {
 			d.getElementById("music").play();
 		}
 	}
-  } // Copyright (C) 2016 RogueScalar - ALL RIGHTS RESERVED.
+  } 
 </script>
 <div id="kba">*** Use your Keyboard Arrow Keys to move OR Mouse to click on the Directional Buttons above ***</div>
 <div id="copyright">A RogueScalar Game !<br/ >Copyright (C) 2016 RogueScalar - ALL RIGHTS RESERVED | Game Music Credit: Half Pipe by Huma-Huma (Youtube free audio)</div>
